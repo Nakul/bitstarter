@@ -9,7 +9,9 @@ var mybuffer = new Buffer(64);
 mybuffer=fs.ReadFileSync('~/bitstarter/index.html');
 
 app.get('/', function(request, response) {
-  response.send(mybuffer.toString(0,12));
+  //response.send(mybuffer.toString(0,27)
+response.send('Nakul');
+
 });
 
 var port = process.env.PORT || 5000;
