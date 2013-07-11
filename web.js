@@ -2,17 +2,16 @@ var fs = require("fs");
 
 var mybuffer = new Buffer(64);
 
-mybuffer=fs.ReadFileSync('/home/nakul/bitstarter/index.html');
+//mybuffer=fs.ReadFileSync('/home/nakul/bitstarter/index.html');
+
+//var data = mybuffer.toString(0,27);
 
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var data = mybuffer.toString(0,27);
 app.get('/', function(request, response) {
-  //response.send(mybuffer.toString(0,27)
-response.send('Nakul');
-
+		response.send('Nakul');
 });
 
 var port = process.env.PORT || 5000;
