@@ -4,7 +4,7 @@ var mybuffer = new Buffer(64);
 
 mybuffer = fs.readFileSync("index.html");
 
-var data = mybuffer.toString(0,27);
+var data = mybuffer.toString("utf8", 0, 27);
 
 var express = require('express');
 
