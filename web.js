@@ -2,7 +2,7 @@ var fs = require("fs");
 
 //var mybuffer = new Buffer(64);
 
-var data = fs.readFileSync("/home/nakul/bitstarter/index.html");
+var data = fs.readFileSync("index.html");
 
 var express = require('express');
 
