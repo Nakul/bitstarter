@@ -6,7 +6,7 @@ var mybuffer = new Buffer(stats.size);
 
 mybuffer = fs.readFileSync("index.html");
 
-var data = mybuffer.toString("utf8", 0, buffer.length);
+var data = mybuffer.toString("utf8", 0, mybuffer.length);
 
 var express = require('express');
 
