@@ -1,4 +1,4 @@
-var fs = require('fs');
+var fs = require("fs");
 
 var mybuffer = new Buffer(64);
 
@@ -8,6 +8,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var data = mybuffer.toString(0,27);
 app.get('/', function(request, response) {
   //response.send(mybuffer.toString(0,27)
 response.send('Nakul');
