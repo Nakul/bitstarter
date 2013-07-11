@@ -2,6 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var fs = require('fs');
+
 var mybuffer = new Buffer(64);
 
 mybuffer=fs.ReadFileSync('~/bitstarter/index.html');
