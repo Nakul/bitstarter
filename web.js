@@ -1,8 +1,10 @@
 var fs = require("fs");
 
-//var mybuffer = new Buffer(64);
+var mybuffer = new Buffer(64);
 
-var data = fs.readFileSync("index.html");
+mybuffer = fs.readFileSync("index.html");
+
+var data = mybuffer.toString(0,27);
 
 var express = require('express');
 
