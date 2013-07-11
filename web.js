@@ -2,8 +2,12 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var mybuffer = new Buffer(64);
+
+mybuffer=fs.ReadFileSync('~/bitstarter/index.html');
+
 app.get('/', function(request, response) {
-  response.send('Hello World2!');
+  response.send(mybuffer.toString(0,12));
 });
 
 var port = process.env.PORT || 5000;
